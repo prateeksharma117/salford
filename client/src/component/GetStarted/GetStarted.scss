@@ -1,0 +1,31 @@
+.getStarted_wrapper{
+
+
+    .g_container{
+
+        .inner_Container{
+            gap: 1.5rem;
+            background: var(--dark-green);
+            padding: 2rem;
+            border-radius: 10px;
+            border: 6px solid var(--lightGreen);
+            text-align: center;
+
+            .primaryText{
+                color: white;
+                font-weight: 600;
+            }
+
+            .secondaryText{
+                width: 70%;
+            }
+
+            .button{
+                background: var(--lightGreen);
+                border: 2px solid white;
+                box-shadow: var(--shadow);
+                border-radius: 10px;
+            }
+        }
+    }
+}

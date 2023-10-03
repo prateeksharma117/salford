@@ -1,0 +1,25 @@
+.properties_container{
+    gap: 2rem;
+
+    .search_bar{
+        width: clamp(12rem,100%,28rem);
+        border-radius: 30px;
+        padding: 0.3rem 0.8rem;
+        border: 1px solid rgba(120,120,120,0.374);
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        button{
+            border-radius: 30px;
+            font-size: 12px;
+            padding: auto;
+        }
+
+        input{
+            border: none;
+            outline: none;
+            width: 70%;
+        }
+    }
+
+}

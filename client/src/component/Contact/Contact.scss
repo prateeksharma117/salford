@@ -1,0 +1,116 @@
+.contact_wrapper {
+    .c_container {
+        justify-content: space-around;
+
+        &>div {
+            flex: 1;
+        }
+
+        .c_left {
+            gap: 0.5rem;
+
+            .contactModes {
+                margin-top: 2rem;
+                gap: 1rem;
+
+                .row {
+                    gap: 1.5rem;
+
+                    .mode {
+                        width: 16rem;
+                        padding: 1rem;
+                        border: 0.8px solid rgba(128, 128, 128, 0.143);
+                        border-radius: 5px;
+                        gap: 1rem;
+                        transition: all 300ms ease-in-out;
+
+                        button {
+                            width: 100%;
+                            background: var(--lightGreen);
+                            font-size: 1rem;
+                            color: var(--green);
+                            font-weight: 600;
+
+                            &:hover {
+                                background: var(-green-gradient);
+                                color: white;
+                                scale: 0.8;
+                            }
+                        }
+
+                        .icon {
+                            padding: 10px;
+                            background: var(--lightGreen);
+                            border-radius: 5px;
+
+                            svg {
+                                fill: var(--primary);
+                            }
+                        }
+
+                        .detail {
+                            margin-left: 2rem;
+
+                            .primaryText {
+                                font-size: 1.1rem;
+                                font-weight: 600;
+                            }
+                        }
+
+                        &:hover {
+                            scale: 1.1;
+                            box-shadow: var(--shadow);
+                        }
+
+                        @media screen and (max-width: 1024px) {
+                            width: 100%;
+                        }
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        flex-direction: column;
+                        width: 100%;
+                    }
+                }
+
+                @media screen and (max-width: 1024px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        .c_right {
+            width: 100%;
+
+            .image_container {
+                width: 30rem;
+                height: 35rem;
+                overflow: hidden;
+                border-radius: 15rem 15rem  0 0;
+                border: 8px solid rgba(0, 0, 0, 0.12);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                @media screen and (max-width:640px){
+                    width: 95%;
+                    height: 25rem;
+                  }
+            }
+
+            @media screen and (max-width: 1024px) {
+                justify-content: center;
+            }
+
+            @media screen and (max-width:640px){
+                width: 100%;
+              }
+        }
+
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+        }
+    }
+}

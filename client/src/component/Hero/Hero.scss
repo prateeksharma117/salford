@@ -1,0 +1,128 @@
+.hero_wrapper {
+  color: white;
+  position: relative;
+  padding-bottom: 2rem;
+
+
+  .hero_container {
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+    //!hero left container
+
+    .hero_left {
+      gap: 3rem;
+      width: 40%;
+
+      .hero_title {
+        position: relative;
+        z-index: 1;
+
+        .orange_circle {
+          height: 4rem;
+          width: 4rem;
+          background: var(--green-gradient);
+          border-radius: 999px;
+          position: absolute;
+          right: 10%;
+          z-index: -1;
+        }
+
+        h1 {
+          font-weight: 600;
+          font-size: 3rem;
+          line-height: 4rem;
+
+          @media screen and (max-width:640px){
+            font-size: 2.2rem;
+            line-height: 3rem;
+          }
+        }
+      }
+
+      .hero_dis{
+        span{
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      .search_bar {
+        background-color: white;
+        justify-content: space-between;
+        width: 100%;
+        border-radius: 5px;
+        border: 2px solid rgba(120, 120, 120, 0.374);
+        padding: 0.5rem 1rem;
+
+        input {
+          width: 70%;
+          border: none;
+          outline: none;
+
+          @media screen and (max-width:625px){
+          width: 50%;
+          }
+
+          @media screen and (max-width:300px){
+            width: 30%;
+            }
+        }
+      }
+
+      .stats {
+        width: 100%;
+        justify-content: space-between;
+
+        .stat {
+
+          span:nth-child(1){
+            font-size: 1.5rem;
+          }
+        }
+
+        @media screen and (max-width:640px){
+          justify-content: center;
+          gap: 1.5rem;
+        }
+      }
+
+      @media screen and (max-width:1100px){
+        width: 70%;
+      }
+
+      @media screen and (max-width:640px){
+        width: 100%;
+      }
+    }
+
+    //!hero right container
+    .hero_right {
+
+      .image_container {
+        width: 30rem;
+        height: 35rem;
+        overflow: hidden;
+        border-radius: 15rem 15rem  0 0;
+        border: 8px solid rgba(255, 255, 255, 0.12);
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        @media screen and (max-width:640px){
+          width: 95%;
+          height: 25rem;
+        }
+      }
+
+      @media screen and (max-width:640px){
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width:640px){
+      margin-top: 2rem;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.footer_wrapper{
+
+    .f_container{
+        justify-content: space-between;
+        border-top: .7px solid rgb(0,0,0,0.148);
+
+        .f_left{
+            gap: 1rem;
+        }
+
+        .f_right{
+
+            .f_menu{
+                gap: 1.5rem;
+                margin-top: 1.5rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
