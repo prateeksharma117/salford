@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     domain="dev-4e575epidzp0fo5r.jp.auth0.com"
     clientId="KpYb6KYZAVFQgfRF1jlJ3pnssjzBhrjD"
     authorizationParams={{
-      redirect_uri:"http://localhost:5173"
+      redirect_uri:"https://salford-one.vercel.app/"
     }}
     audience="http://localhost:9000"
     scope="openid profile email"
