@@ -1,6 +1,6 @@
-import { Companies, Contact, GetStarted,Hero, Residencies, Value } from '../component'
+import { Companies, Contact, GetStarted,Hero, Residencies, Value } from '../../component'
 
-const website = () => {
+const Website = () => {
   return (
     <>
       <div className="App">
@@ -18,4 +18,4 @@ const website = () => {
   );
 };
 
-export default website;
+export default Website;

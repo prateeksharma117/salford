@@ -1,9 +1,8 @@
-import Website from "./pages/website";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import { Suspense } from "react";
 import { Layout } from "./component";
-import {Properties,PropertyDes} from "./pages"
+import {Properties,PropertyDes,Website} from "./pages"
 import {QueryClient, QueryClientProvider} from "react-query"
 import { ToastContainer } from "react-toastify";
 import {ReactQueryDevtools} from "react-query/devtools"
