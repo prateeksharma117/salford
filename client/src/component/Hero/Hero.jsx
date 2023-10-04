@@ -1,4 +1,4 @@
-import "./hero.scss";
+import "./Hero.scss";
 import heroImg from "../../assets/hero.jpg";
 import { useSpring, animated } from "react-spring";
 import {motion} from "framer-motion"
