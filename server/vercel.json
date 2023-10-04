@@ -1,4 +1,10 @@
 {
-  "regions":["kix1"],
-  "public":false
+    "version": 2,
+    "name": "node-js",
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ]
 }
