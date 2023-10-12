@@ -129,7 +129,7 @@ export const getAllFav=async(email,token)=>{
         },
         )
         return res?.data["favResidenciesId"],
-        console.log(res?.data)
+        console.log(res?.data["favResidenciesId"])
     } catch (e) {
         toast.error("something went wrong while fetching favorites")
         throw e
