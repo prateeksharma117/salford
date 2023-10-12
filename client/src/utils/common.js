@@ -1,4 +1,6 @@
 export const updateFavorites=(id,favorites)=>{
+    console.log("favourites:",favorites);
+    console.log("id:",id);
     if (favorites?.includes(id)) {
         return favorites?.filter((resId)=>resId!==id)
     }
