@@ -115,6 +115,7 @@ export const toFav=async(id,email,token)=>{
 }
 
 export const getAllFav=async(email,token)=>{
+    console.log(token);
     if(!token) return
     try {
         const res=await api.post(`/user/allFavResidency`,
@@ -127,7 +128,7 @@ export const getAllFav=async(email,token)=>{
             },
         },
         )
-        return res.data["favResidenciesId"]
+        return res?.data["favResidenciesId"]
     } catch (e) {
         toast.error("something went wrong while fetching favorites")
         throw e
