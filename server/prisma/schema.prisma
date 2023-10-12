@@ -1,10 +1,11 @@
 generator client {
-    provider = "prisma-client-js"
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-1.0.x"]
 }
 
 datasource db {
     provider = "mongodb"
-    url      = env("DATABASE_URL")
+    url      = "mongodb+srv://ps9665748:mrprateek@cluster0.ahzq4mk.mongodb.net/Atlas?retryWrites=true&w=majority"
 }
 
 model User {
