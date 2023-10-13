@@ -99,7 +99,7 @@ export const favResidency=asyncHandler(async(req,res)=>{
     }
 })
 
-export const allFavResidency=asyncHandler(async(req,res)=>{
+export const getAllFavResidency=asyncHandler(async(req,res)=>{
     const {email}=req.body
     try {
         const allFavResidency=await prisma.user.findUnique({
@@ -112,3 +112,4 @@ export const allFavResidency=asyncHandler(async(req,res)=>{
         throw new Error(e.message)
     }
 })
+
