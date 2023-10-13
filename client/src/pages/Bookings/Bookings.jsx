@@ -34,8 +34,6 @@ const Bookings = () => {
     );
   }
 
-  console.log(`booking: ${bookings}`);
-
   return (
     <div className="wrapper">
       <div className="flexColCenter paddings innerWidth properties_container">
@@ -47,8 +45,13 @@ const Bookings = () => {
         <div className="paddings flexCenter properties">
           {
           bookings.length<1?
-          toast.error("There is no residency you booked")
+          (
+            <h1>Currently, you don&apos;t have a booked residency
+              {toast.error("Currently, you don't have a booked residency")}
+            </h1>
+          )
           :
+          (
           data.filter((property)=>bookings.map((booking)=>booking.id).includes(property.id))
           .filter((property)=>property.title.toLowerCase().includes(filter.toLowerCase())||
           property.city.toLowerCase().includes(filter.toLowerCase())||
@@ -56,8 +59,8 @@ const Bookings = () => {
           )
           .map((card, i) => (
             <PropertyCard card={card} key={i} />
-          ))  
-          
+          ))
+          )  
           
           }
         </div>
