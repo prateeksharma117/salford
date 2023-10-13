@@ -46,7 +46,7 @@ const Favorites = () => {
 
         <div className="paddings flexCenter properties">
           {
-          data===null?
+          data.length<1?
           toast.error("There is no residency you like")
           :
           data?.filter((property)=>favorites?.includes(property.id))
