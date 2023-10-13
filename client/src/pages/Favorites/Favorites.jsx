@@ -5,6 +5,7 @@ import { PuffLoader } from "react-spinners";
 import "react-multi-carousel/lib/styles.css";
 import "../Properties/Properties.scss"
 import UserDetailContext from "../../context/UserDetailContext";
+import { toast } from "react-toastify";
 
 const Favorites = () => {
   const { data, isError, isLoading } = useProperties();
@@ -45,7 +46,9 @@ const Favorites = () => {
 
         <div className="paddings flexCenter properties">
           {
-
+          data===null?
+          toast.error("There is no residency you like")
+          :
           data?.filter((property)=>favorites?.includes(property.id))
           .filter((property)=>property.title.toLowerCase().includes(filter.toLowerCase())||
           property.city.toLowerCase().includes(filter.toLowerCase())||
