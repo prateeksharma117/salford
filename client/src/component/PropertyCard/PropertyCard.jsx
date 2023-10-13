@@ -17,8 +17,7 @@ const PropertyCard = ({ card }) => {
           <Heart id={card?.id}/>
           <img src={card.image} alt="home" />
           <span className="secondaryText r_price">
-            <span style={{ color: "orange" }}>$</span>
-            <span>{numeral(card?.price).format("($ 0.00 a)")}</span>
+            <span style={{ color: "orange" }}>{numeral(card?.price).format("($ 0.00 a)")}</span>
           </span>
 
           <span className="primaryText card_name">

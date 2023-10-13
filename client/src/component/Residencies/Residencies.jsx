@@ -5,6 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 import { PuffLoader } from "react-spinners";
 import useProperties from "../../hooks/useProperties";
 import { truncate } from "lodash";
+import numeral from "numeral";
 
 const Residencies = () => {
 
@@ -68,8 +69,7 @@ const Residencies = () => {
                   <img src={card.image} alt="home" />
 
                   <span className="secondaryText r_price">
-                    <span style={{ color: "orange" }}>$</span>
-                    <span>{card.price}</span>
+                    <span style={{ color: "orange" }}>{numeral(card?.price).format("($ 0.00 a)")}</span>
                   </span>
 
                   <span className="primaryText">{truncate(card.title, { length: 15 })}</span>
