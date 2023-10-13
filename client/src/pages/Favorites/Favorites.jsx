@@ -33,6 +33,8 @@ const Favorites = () => {
     );
   }
 
+  console.log(data)
+
   return (
     <div className="wrapper">
       <div className="flexColCenter paddings innerWidth properties_container">
@@ -44,7 +46,7 @@ const Favorites = () => {
         <div className="paddings flexCenter properties">
           {
 
-          data?.filter((property)=>favorites.includes(property.id))
+          data?.filter((property)=>favorites?.includes(property.id))
           .filter((property)=>property.title.toLowerCase().includes(filter.toLowerCase())||
           property.city.toLowerCase().includes(filter.toLowerCase())||
           property.country.toLowerCase().includes(filter.toLowerCase())
