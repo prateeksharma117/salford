@@ -5,6 +5,7 @@ import { PuffLoader } from "react-spinners";
 import "react-multi-carousel/lib/styles.css";
 import "../Properties/Properties.scss"
 import UserDetailContext from "../../context/UserDetailContext";
+import { toast } from "react-toastify";
 
 const Bookings = () => {
   const { data, isError, isLoading } = useProperties();
@@ -45,7 +46,9 @@ const Bookings = () => {
 
         <div className="paddings flexCenter properties">
           {
-
+          bookings.length<1?
+          toast.error("There is no residency you booked")
+          :
           data.filter((property)=>bookings.map((booking)=>booking.id).includes(property.id))
           .filter((property)=>property.title.toLowerCase().includes(filter.toLowerCase())||
           property.city.toLowerCase().includes(filter.toLowerCase())||

@@ -34,8 +34,6 @@ const Favorites = () => {
     );
   }
 
-  console.log(`data ${data}`)
-
   return (
     <div className="wrapper">
       <div className="flexColCenter paddings innerWidth properties_container">
@@ -46,7 +44,7 @@ const Favorites = () => {
 
         <div className="paddings flexCenter properties">
           {
-          data.length<1?
+          favorites.length<1?
           toast.error("There is no residency you like")
           :
           data?.filter((property)=>favorites?.includes(property.id))
