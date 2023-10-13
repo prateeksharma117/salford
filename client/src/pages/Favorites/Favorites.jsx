@@ -34,6 +34,8 @@ const Favorites = () => {
     );
   }
 
+  console.log(`booking: ${favorites}`);
+
   return (
     <div className="wrapper">
       <div className="flexColCenter paddings innerWidth properties_container">
