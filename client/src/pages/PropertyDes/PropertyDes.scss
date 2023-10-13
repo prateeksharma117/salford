@@ -35,6 +35,7 @@
                 width: 100%;
                 
                 @media screen and (max-width: 624px) {
+                    margin-top: 1rem;
                     flex-direction: column;
                     font-size: 1.1rem;
                 }
