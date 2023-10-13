@@ -46,9 +46,7 @@ const Favorites = () => {
           {
           favorites.length<1?
           (
-            <h1 className="secondaryText">Currently, you don&apos;t have a favorite residency
-              {toast.error("Currently, you don't have a favorite residency")}
-            </h1>
+            <h1 className="secondaryText">Currently, you don&apos;t have a favorite residency</h1>
           )
           :
           (

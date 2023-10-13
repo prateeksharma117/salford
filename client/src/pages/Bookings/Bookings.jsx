@@ -46,9 +46,7 @@ const Bookings = () => {
           {
           bookings.length<1?
           (
-            <h1 className="secondaryText">Currently, you don&apos;t have a booked residency
-              {toast.error("Currently, you don't have a booked residency")}
-            </h1>
+            <h1 className="secondaryText">Currently, you don&apos;t have a booked residency</h1>
           )
           :
           (

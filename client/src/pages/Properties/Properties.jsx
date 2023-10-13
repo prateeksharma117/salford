@@ -11,7 +11,7 @@ const Properties = () => {
   if (isError) {
     return (
       <div className="wrapper">
-        <span>Error while fetching data</span>
+        <h1 className="secondaryText">Error while fetching data </h1>
       </div>
     );
   }
