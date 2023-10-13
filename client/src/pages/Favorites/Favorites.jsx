@@ -34,7 +34,7 @@ const Favorites = () => {
     );
   }
 
-  console.log(`booking: ${favorites}`);
+  console.log(`favourites: ${favorites}`);
 
   return (
     <div className="wrapper">
