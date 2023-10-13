@@ -77,7 +77,7 @@ const PropertyDes = () => {
                     <div className="flexCenter property_details">
                         {/* left */}
                         <div className="flexColStart left">
-                            <div className="flexStart head">
+                            <div className="flexStart head" style={{gap:3}}>
                                 <span className="primaryText">{data?.title}</span>
                                 <span className="orangeText" style={{ fontSize: "1.2rem" }}>
                                     {numeral(data?.price).format("($ 0.00 a)")}
