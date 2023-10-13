@@ -73,12 +73,12 @@ export const favResidency=asyncHandler(async(req,res)=>{
         const user=await prisma.user.findUnique({
             where:{email},  
         })
-        if (user.favResidenciesId.includes(rid)) {
+        if (user.favResidenciesID.includes(rid)) {
             const updateUser=await prisma.user.update({
                 where: {email},
                 data:{
-                    favResidenciesId:{
-                        set:user.favResidenciesId.filter((id)=>id!==rid)
+                    favResidenciesID:{
+                        set:user.favResidenciesID.filter((id)=>id!==rid)
                     }
                 }
             })
@@ -87,7 +87,7 @@ export const favResidency=asyncHandler(async(req,res)=>{
             const updateUser= await prisma.user.update({
                 where: {email},
                 data:{
-                    favResidenciesId:{
+                    favResidenciesID:{
                         push:rid
                     }
                 }
@@ -104,7 +104,7 @@ export const getAllFavResidency=asyncHandler(async(req,res)=>{
     try {
         const allFavResidency=await prisma.user.findUnique({
             where: {email},
-            select:{favResidenciesId:true}
+            select:{favResidenciesID:true}
         })
         res.status(200).send(allFavResidency)
         }
