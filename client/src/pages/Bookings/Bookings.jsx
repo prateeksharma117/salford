@@ -33,6 +33,8 @@ const Bookings = () => {
     );
   }
 
+  console.log(`booking: ${bookings}`);
+
   return (
     <div className="wrapper">
       <div className="flexColCenter paddings innerWidth properties_container">
