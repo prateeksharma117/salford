@@ -1,7 +1,6 @@
 import axios from "axios";
 import dayjs from "dayjs";
 import { toast } from "react-toastify";
-import data from "./accordion";
 
 export const api = axios.create({
     baseURL: "https://salford-backend.vercel.app/api",
@@ -128,7 +127,7 @@ export const getAllFav=async(email,token)=>{
             },
         },
         )
-        console.log(res?.data["favResidenciesId"])
+        console.log(`data: ${res?.data["favResidenciesId"]}`)
         return res?.data["favResidenciesId"]
     } catch (e) {
         toast.error("something went wrong while fetching favorites")
