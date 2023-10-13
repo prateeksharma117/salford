@@ -8,5 +8,5 @@ router.post("/bookVisit/:id",jwtCheck,bookVisit)
 router.post("/allBookings",getallBookings) 
 router.post("/cancelBooking/:id",jwtCheck,cancelBookings) 
 router.post("/favResidency/:rid",jwtCheck,favResidency) 
-router.post("/allFavResidency",allFavResidency) 
+router.get("/allFavResidency",allFavResidency) 
 export {router as userRoute}
