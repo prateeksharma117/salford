@@ -14,6 +14,7 @@ import { useState, useContext } from "react";
 import UserDetailContext from "../../context/UserDetailContext";
 import { Button, MantineProvider } from "@mantine/core";
 import { toast } from "react-toastify";
+import numeral from "numeral";
 
 const PropertyDes = () => {
     const { user } = useAuth0();
@@ -79,7 +80,7 @@ const PropertyDes = () => {
                             <div className="flexStart head">
                                 <span className="primaryText">{data?.title}</span>
                                 <span className="orangeText" style={{ fontSize: "1.5rem" }}>
-                                    ${data?.price}
+                                    {numeral(data?.price).format("($ 0.00 a)")}
                                 </span>
                             </div>
                             <div className="flexStart facilities">
